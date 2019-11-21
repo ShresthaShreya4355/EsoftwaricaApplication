@@ -2,6 +2,8 @@ package com.example.esoftwaricaapplication;
 
 import android.os.Bundle;
 
+import com.example.esoftwaricaapplication.ui.dashboard.DashboardFragment;
+import com.example.esoftwaricaapplication.ui.dashboard.Student;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +18,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        DashboardFragment.students.add(new Student("20","Jeenifer","Boudha","Female"));
+        DashboardFragment.students.add(new Student("19","Chandler","Kathmandu","Male"));
+        DashboardFragment.students.add(new Student("20","Saroj","Australia","Others"));
+
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.

@@ -9,11 +9,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="141dp"
-        android:layout_height="114dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="133dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintHorizontal_bias="0.025"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/jeen" />
@@ -22,7 +22,7 @@
         android:id="@+id/textName"
         android:layout_width="90dp"
         android:layout_height="18dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="16dp"
         android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.121"
@@ -33,7 +33,7 @@
         android:id="@+id/textAge"
         android:layout_width="82dp"
         android:layout_height="21dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:text="Age"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.116"
@@ -45,8 +45,9 @@
         android:layout_width="104dp"
         android:layout_height="22dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="4dp"
         android:text="Address"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/textAge" />
 
@@ -54,18 +55,18 @@
         android:id="@+id/textGender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
         android:text="Gender"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnDelete" />
 
     <Button
         android:id="@+id/btnDelete"
-        android:layout_width="40dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="43dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
         android:background="@drawable/delete"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
